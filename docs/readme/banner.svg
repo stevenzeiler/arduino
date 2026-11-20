@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-labelledby="t d">
+  <title id="t">arduino</title>
+  <desc id="d">Banner: arduino, an infrared thermometer wired to an LCD screen, drawn as a circuit board.</desc>
+  <style>
+    .trace { stroke: #3fb97a; stroke-width: 3; fill: none; stroke-linecap: round; stroke-linejoin: round; opacity: .55; }
+    .pulse { stroke: #9bffc8; stroke-width: 4; fill: none; stroke-linecap: round; stroke-dasharray: 26 420; animation: run 9s linear infinite; }
+    .pad { fill: #0f2a1f; stroke: #3fb97a; stroke-width: 3; }
+    .title { font: 700 76px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #e8fff3; }
+    .sub { font: 400 26px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #8fd9b0; }
+    .lcd { font: 700 30px ui-monospace, Menlo, Consolas, monospace; fill: #0b2a14; }
+    @keyframes run { from { stroke-dashoffset: 446; } to { stroke-dashoffset: 0; } }
+    @media (prefers-reduced-motion: reduce) { .pulse { animation: none; stroke-dasharray: 26 420; stroke-dashoffset: 300; } }
+  </style>
+  <rect x="0" y="0" width="1200" height="300" rx="24" fill="#0b1d16"/>
+  <rect x="3" y="3" width="1194" height="294" rx="22" fill="none" stroke="#1f5a40" stroke-width="2"/>
+  <!-- circuit traces -->
+  <path class="trace" d="M60 70 H220 V120 H330"/>
+  <path class="trace" d="M60 230 H180 V180 H330"/>
+  <path class="trace" d="M870 150 H960 V90 H1060"/>
+  <path class="trace" d="M870 170 H960 V230 H1060"/>
+  <path class="pulse" d="M60 70 H220 V120 H330"/>
+  <path class="pulse" style="animation-delay:-3s" d="M60 230 H180 V180 H330"/>
+  <path class="pulse" style="animation-delay:-6s" d="M870 150 H960 V90 H1060"/>
+  <circle class="pad" cx="60" cy="70" r="9"/><circle class="pad" cx="60" cy="230" r="9"/>
+  <circle class="pad" cx="1060" cy="90" r="9"/><circle class="pad" cx="1060" cy="230" r="9"/>
+  <!-- text -->
+  <text class="title" x="350" y="150">arduino</text>
+  <text class="sub" x="352" y="198">an infrared thermometer, wired to an LCD</text>
+  <text class="sub" x="352" y="236" opacity=".7">MLX90614 · I2C · 16x2 · 2014</text>
+  <!-- LCD motif -->
+  <rect x="1090" y="60" width="86" height="70" rx="8" fill="#7ed957" stroke="#3fb97a" stroke-width="3"/>
+  <text class="lcd" x="1100" y="92">C:</text>
+  <text class="lcd" x="1100" y="120">F:</text>
+</svg>
